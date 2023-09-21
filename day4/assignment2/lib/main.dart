@@ -1,3 +1,4 @@
+import 'package:assignment2/orderItem.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -72,240 +73,52 @@ class _MyAppState extends State<MyApp> {
                     onTap: () {
                       addOrderList('맥주');
                     },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(
-                                0, 3), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Expanded(
-                              child: Image.asset('assets/option_beer.png',
-                                  fit: BoxFit.cover)),
-                          const Text(
-                            '맥주',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text("[담기]"),
-                        ],
-                      ),
-                    ),
+                    child: const OrderItem(
+                        foodImg: 'assets/option_beer.png', foodName: '맥주'),
                   ),
                   InkWell(
                     onTap: () {
                       addOrderList('떡볶이');
                     },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(
-                                0, 3), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Expanded(
-                              child: Image.asset('assets/option_bokki.png',
-                                  fit: BoxFit.cover)),
-                          const Text(
-                            '떡볶이',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text("[담기]"),
-                        ],
-                      ),
-                    ),
+                    child: const OrderItem(
+                        foodImg: 'assets/option_bokki.png', foodName: '떡볶이'),
                   ),
                   InkWell(
                     onTap: () {
                       addOrderList('김밥');
                     },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(
-                                0, 3), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Expanded(
-                              child: Image.asset('assets/option_kimbap.png',
-                                  fit: BoxFit.cover)),
-                          const Text(
-                            '김밥',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text("[담기]"),
-                        ],
-                      ),
-                    ),
+                    child: const OrderItem(
+                        foodImg: 'assets/option_kimbap.png', foodName: '김밥'),
                   ),
                   InkWell(
                     onTap: () {
                       addOrderList('오므라이스');
                     },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(
-                                0, 3), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Expanded(
-                              child: Image.asset('assets/option_omurice.png',
-                                  fit: BoxFit.cover)),
-                          const Text(
-                            '오므라이스',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text("[담기]"),
-                        ],
-                      ),
-                    ),
+                    child: const OrderItem(
+                        foodImg: 'assets/option_omurice.png',
+                        foodName: '오므라이스'),
                   ),
                   InkWell(
                     onTap: () {
                       addOrderList('돈까스');
                     },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(
-                                0, 3), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Expanded(
-                              child: Image.asset(
-                                  'assets/option_pork_cutlets.png',
-                                  fit: BoxFit.cover)),
-                          const Text(
-                            '돈까스',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text("[담기]"),
-                        ],
-                      ),
-                    ),
+                    child: const OrderItem(
+                        foodImg: 'assets/option_pork_cutlets.png',
+                        foodName: '돈까스'),
                   ),
                   InkWell(
                     onTap: () {
                       addOrderList('라면');
                     },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(
-                                0, 3), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Expanded(
-                              child: Image.asset('assets/option_ramen.png',
-                                  fit: BoxFit.cover)),
-                          const Text(
-                            '라면',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text("[담기]"),
-                        ],
-                      ),
-                    ),
+                    child: const OrderItem(
+                        foodImg: 'assets/option_ramen.png', foodName: '라면'),
                   ),
                   InkWell(
                     onTap: () {
                       addOrderList('우동');
                     },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(
-                                0, 3), // changes position of shadow
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Expanded(
-                              child: Image.asset('assets/option_udon.png',
-                                  fit: BoxFit.cover)),
-                          const Text(
-                            '우동',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Text("[담기]"),
-                        ],
-                      ),
-                    ),
+                    child: const OrderItem(
+                        foodImg: 'assets/option_udon.png', foodName: '우동'),
                   ),
                 ],
               ),
