@@ -39,7 +39,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<dynamic> getDogsRes() async {
-    print('builder Refresh');
     var dio = Dio();
     try {
       var res = await dio.get('https://sniperfactory.com/sfac/http_day16_dogs');
