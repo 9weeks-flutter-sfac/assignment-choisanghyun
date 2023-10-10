@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:secret_cat_sdk/api/api.dart';
 
 class UploadPage extends StatefulWidget {
@@ -52,6 +53,14 @@ class _UploadPageState extends State<UploadPage> {
                       onPressed: () {
                         SecretCatApi.addSecret(textFieldController.text);
                         textFieldController.text = '';
+                        Fluttertoast.showToast(
+                            msg: "비밀 공유 성공",
+                            toastLength: Toast.LENGTH_SHORT,
+                            gravity: ToastGravity.BOTTOM,
+                            timeInSecForIosWeb: 1,
+                            backgroundColor: Colors.grey,
+                            textColor: Colors.white,
+                            fontSize: 16.0);
                         setState(() {});
                       },
                       child: const Text("비밀 전송하기"),

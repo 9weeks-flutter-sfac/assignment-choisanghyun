@@ -55,7 +55,8 @@ class _MainPageState extends State<MainPage> {
                             builder: (context) =>
                                 SecretPage(secretData: secretData),
                           ),
-                        );
+                        ).then((value) => print('push then secret'));
+                        //push 후 되돌아올때, then 이후의 코드가 실행됨.
                       },
                       child: Container(
                           decoration: const BoxDecoration(color: Colors.white),

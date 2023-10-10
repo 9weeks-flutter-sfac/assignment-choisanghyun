@@ -38,7 +38,7 @@ class AuthorPage extends StatelessWidget {
                 itemCount: data!.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
-                  childAspectRatio: 1 / 2,
+                  childAspectRatio: 1 / 1,
                   crossAxisSpacing: 10,
                 ),
                 itemBuilder: (context, index) {
