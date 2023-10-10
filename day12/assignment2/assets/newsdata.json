@@ -1,0 +1,67 @@
+[
+    {
+      "title":
+          "Researchers fear growing COVID vaccine hesitancy in developing nations",
+      "articleUrl": "/articles/d41586-021-03830-7",
+      "creator": "Smriti Mallapaty",
+      "datePublished": "2021-12-23T14:58:04+09:00",
+      "type" : "News",
+      "imgUrl":
+          "https://media.nature.com/lw767/magazine-assets/d41586-021-03830-7/d41586-021-03830-7_19972466.jpg?as=webp"
+    },
+    {
+      "title": "Fatal lab explosion in China highlights wider safety fears",
+      "articleUrl": "/articles/d41586-021-03589-x",
+      "creator": "Andrew Silver",
+      "datePublished": "2021-12-22T14:58:04+09:00",
+      "type" : "News",
+      "imgUrl":
+          "https://media.nature.com/lw767/magazine-assets/d41586-021-03589-x/d41586-021-03589-x_19914056.jpg?as=webp"
+    },
+    {
+      "title": "Journals adopt AI to spot duplicated imgUrls in manuscripts",
+      "articleUrl": "/articles/d41586-021-03807-6",
+      "creator": "Richard Van Noorden",
+      "datePublished": "2021-12-21T14:58:04+09:00",
+      "type" : "News",
+      "imgUrl":
+          "https://media.nature.com/lw767/magazine-assets/d41586-021-03807-6/d41586-021-03807-6_19969478.jpg?as=webp"
+    },
+    {
+      "title": "How COVID vaccines shaped 2021 in eight powerful charts",
+      "articleUrl": "/articles/d41586-021-03772-0",
+      "creator": "Davide Castelvecchi",
+      "datePublished": "2021-12-17T14:58:04+09:00",
+      "type" : "News",
+      "imgUrl":
+          "https://media.nature.com/w1248/magazine-assets/d41586-021-03772-0/d41586-021-03772-0_19962224.jpg?as=webp"
+    },
+    {
+      "title": "Evidence of racism found at prestigious London university",
+      "articleUrl": "/articles/d41586-021-03755-1",
+      "creator": "Linda Nordling",
+      "datePublished": "2021-12-15T14:58:04+09:00",
+      "type" : "News",
+      "imgUrl":
+          "https://media.nature.com/lw767/magazine-assets/d41586-021-03755-1/d41586-021-03755-1_19957958.jpg?as=webp"
+    },
+    {
+      "title":
+          "Giant cracks push imperilled Antarctic glacier closer to collapse",
+      "articleUrl": "/articles/d41586-021-03758-y",
+      "creator": "Alexandra Witze",
+      "datePublished": "2021-12-14T14:58:04+09:00",
+      "type" : "News",
+      "imgUrl":
+          "https://media.nature.com/lw767/magazine-assets/d41586-021-03758-y/d41586-021-03758-y_19957854.jpg?as=webp"
+    },
+    {
+      "title": "This tiny iron-rich world is extraordinarily metal",
+      "articleUrl": "/articles/d41586-021-03587-z",
+      "creator": "Alexandra Witze",
+      "datePublished": "2021-12-02T14:58:04+09:00",
+      "type" : "News",
+      "imgUrl":
+          "https://media.nature.com/lw767/magazine-assets/d41586-021-03587-z/d41586-021-03587-z_19918996.jpg?as=webp"
+    }
+  ]
