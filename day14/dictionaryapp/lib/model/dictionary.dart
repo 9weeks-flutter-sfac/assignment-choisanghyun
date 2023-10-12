@@ -165,13 +165,11 @@ class Phonetic {
   String text;
   String audio;
   String sourceUrl;
-  License? license;
 
   Phonetic({
     required this.text,
     required this.audio,
     required this.sourceUrl,
-    this.license,
   });
 
   Map<String, dynamic> toMap() {
@@ -179,7 +177,7 @@ class Phonetic {
       'text': text,
       'audio': audio,
       'sourceUrl': sourceUrl,
-      'license': license!.toMap(),
+      //'license': license!.toMap(),
     };
   }
 
@@ -188,7 +186,7 @@ class Phonetic {
       text: map['text'] as String,
       audio: map['audio'] as String,
       sourceUrl: map['sourceUrl'] as String,
-      license: License?.fromMap(map['license']),
+      //license: License?.fromMap(map['license']),
     );
   }
 
