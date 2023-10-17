@@ -37,7 +37,7 @@ class AuthController extends GetxController {
       Get.toNamed(MainPage.route);
       return;
     }
-    Get.toNamed(LoginPage.route);
+    Get.offAndToNamed(LoginPage.route);
     return;
   }
 
