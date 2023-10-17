@@ -1,0 +1,84 @@
+import 'dart:ui';
+import 'package:assignment/controller/uploadcontroller.dart';
+import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
+
+class UploadPage extends GetView<UploadContorller> {
+  const UploadPage({super.key});
+  static const String routes = '/upload';
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Stack(children: <Widget>[
+        Image.asset(
+          'assets/images/secretbackgroundImg.jpg',
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          fit: BoxFit.fill,
+        ),
+        BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+          child: Container(
+            color: Colors.black.withOpacity(0.3),
+            width: double.infinity,
+            height: double.infinity,
+          ),
+        ),
+        SafeArea(
+          child: Scaffold(
+            appBar: AppBar(
+              title: const Text('뒤로가기'),
+              backgroundColor: Colors.transparent,
+            ),
+            backgroundColor: const Color.fromARGB(0, 0, 0, 0),
+            body: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        controller.upload(controller.uploadController.text,
+                            controller.user!.id, controller.user!.username);
+                        Fluttertoast.showToast(
+                            msg: "비밀 공유 성공",
+                            toastLength: Toast.LENGTH_SHORT,
+                            gravity: ToastGravity.BOTTOM,
+                            timeInSecForIosWeb: 1,
+                            backgroundColor: Colors.grey,
+                            textColor: Colors.white,
+                            fontSize: 16.0);
+                      },
+                      child: const Text("비밀 전송하기"),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 200,
+                    child: TextField(
+                      controller: controller.uploadController,
+                      maxLines: null,
+                      expands: true,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ]),
+    );
+  }
+}
