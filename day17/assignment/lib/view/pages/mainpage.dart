@@ -43,9 +43,12 @@ class MainPage extends GetView<MainController> {
                   child: SizedBox(
                     width: 80,
                     height: 80,
-                    child: ClipOval(
-                      child: Image.asset(
-                        'assets/images/silence.png',
+                    child: Hero(
+                      tag: 'trademark',
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/images/silence.png',
+                        ),
                       ),
                     ),
                   ),

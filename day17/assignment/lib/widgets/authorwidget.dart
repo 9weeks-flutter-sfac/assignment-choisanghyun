@@ -16,7 +16,9 @@ class AuthorWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        BounceInUp(
+        FadeInUp(
+          from: 50,
+          duration: const Duration(milliseconds: 1500),
           child: CircleAvatar(
             backgroundColor: Colors.white,
             radius: 50,

@@ -30,11 +30,27 @@ class AuthManagementController extends GetxController {
         _token(token);
       }
     } catch (e) {
+      Fluttertoast.showToast(
+          msg: "로그인에 실패하였습니다.",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.red,
+          textColor: Colors.yellow,
+          fontSize: 16.0);
       print(e);
     }
   }
 
   logout() {
+    Fluttertoast.showToast(
+        msg: "로그아웃에 성공하였습니다.",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.grey,
+        textColor: Colors.white,
+        fontSize: 16.0);
     _user.value = null;
     _user(null);
   }

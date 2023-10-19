@@ -1,3 +1,4 @@
+import 'package:assignment/controller/logincontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,29 +12,21 @@ class LoginTextFieldWidget extends StatelessWidget {
   final TextEditingController controller;
   final String item;
 
-  isObscureText(String value) {
-    switch (value) {
-      case 'PW':
-        {
-          return true;
-        }
-      default:
-        {
-          return false;
-        }
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
+    var loginController = Get.find<LoginController>();
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(item),
         SizedBox(
           width: Get.width * 0.8,
-          child: TextField(
-            obscureText: isObscureText(item),
+          child: TextFormField(
+            autovalidateMode: AutovalidateMode.onUserInteraction,
+            validator: (value) {
+              return loginController.textValidator(value: value, item: item);
+            },
+            obscureText: loginController.isObscureText(item),
             controller: controller,
             decoration: InputDecoration(
                 hintText: item,

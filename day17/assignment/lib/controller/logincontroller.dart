@@ -15,4 +15,37 @@ class LoginController extends GetxController {
   readSecret() {
     Get.find<SecretController>().readSecret();
   }
+
+  String? textValidator({required String? value, required String item}) {
+    switch (item) {
+      case ('ID'):
+        {
+          if (value == "") {
+            return 'ID를 입력해주세요.';
+          }
+        }
+      case ('PW'):
+        {
+          if (value == "") {
+            return 'PW를 입력해주세요.';
+          } else if (value!.length < 9) {
+            return 'PW 길이는 9자리 이상입니다.';
+          }
+        }
+    }
+    return null;
+  }
+
+  bool isObscureText(String value) {
+    switch (value) {
+      case 'PW':
+        {
+          return true;
+        }
+      default:
+        {
+          return false;
+        }
+    }
+  }
 }

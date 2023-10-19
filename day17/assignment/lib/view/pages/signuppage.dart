@@ -1,11 +1,7 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:assignment/controller/signupcontroller.dart';
-import 'package:assignment/widgets/logintextfieldwidget.dart';
 import 'package:assignment/widgets/signuptextfieldwidget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/get_core.dart';
-import 'package:get/get_navigation/get_navigation.dart';
 
 class SignUpPage extends GetView<SignUpContorller> {
   const SignUpPage({super.key});
