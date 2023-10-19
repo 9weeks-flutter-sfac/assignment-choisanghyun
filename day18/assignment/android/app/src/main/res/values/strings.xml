@@ -1,0 +1,7 @@
+
+<resources>
+    <string name="app_name">com.example.assignment</string>
+    <string name="facebook_app_id">1057975408718984</string>
+    <string name="fb_login_protocol_scheme">fb1057975408718984</string>
+    <string name="facebook_client_token">f291a6863fd6d563a14a323f3ab81bf8</string>
+</resources>
